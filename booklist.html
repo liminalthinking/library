@@ -51,7 +51,7 @@
                     <div class="row booklistdetail">
                         <div class="col-md-2">
                             <div class="container">
-                                <img src="/images/book1.jpg" class="img-fluid mx-auto">
+                                <img src="images/book1.jpg" class="img-fluid mx-auto">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -77,7 +77,7 @@
                     <div class="row booklistdetail">
                         <div class="col-md-2">
                             <div class="container">
-                                <img src="/images/book2.jpg">
+                                <img src="images/book2.jpg">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -104,7 +104,7 @@
                     <div class="row booklistdetail">
                         <div class="col-md-2">
                             <div class="container">
-                                <img src="/images/book3.jpg">
+                                <img src="images/book3.jpg">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -130,7 +130,7 @@
                     <div class="row booklistdetail">
                         <div class="col-md-2">
                             <div class="container">
-                                <img src="/images/book4.jpg">
+                                <img src="images/book4.jpg">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -157,7 +157,7 @@
                     <div class="row booklistdetail">
                         <div class="col-md-2">
                             <div class="container">
-                                <img src="/images/book5.jpg">
+                                <img src="images/book5.jpg">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -192,13 +192,13 @@
 
 
     <script>
-        fetch('/header.html')                          // path relative to your site root
+        fetch('header.html')                          // path relative to your site root
             .then(response => response.text())           // parse the response as plain text/HTML
             .then(html => {
                 document.getElementById('header-bootstrap-example').innerHTML = html;
             })
             .catch(err => console.error('Header failed to load:', err));
-        fetch('/footer.html')                          // path relative to your site root
+        fetch('footer.html')                          // path relative to your site root
             .then(response => response.text())           // parse the response as plain text/HTML
             .then(html => {
                 document.getElementById('footer-bootstrap-example').innerHTML = html;
