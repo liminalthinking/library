@@ -1,0 +1,60 @@
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+#searchbox {
+  padding:100px;
+  background-color: #FAF7F2;
+  margin-bottom: 50px;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.refinesearch, .booksection {
+  padding: 20px;
+  border: 1px solid #F4A623;
+  
+}
+
+.booklistdetail {
+ margin-bottom: 50px; 
+}
+
+.bgcolor {
+  background-color: #FAF7F2;
+  
+}
+
+.booktitle:hover {
+  text-decoration: rgb(13, 110, 253) underline;
+  color: rgb(13, 110, 253) ;
+}
+
+.no-underline {
+  text-decoration: none;
+  color:black
+}
+
+.contactbtn {
+  border: 1px solid #F4A623;
+
+} 
+
+.carouselfont {
+  color: white;
+}

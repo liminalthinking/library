@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Book Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <link href="css/headers.css" rel="stylesheet" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="header-bootstrap-example"></div>
+    <div class="container px-4 text-center">
+        <div class="row gx-2">
+            <div class="col-4">
+                <div class="p-2"><img src="/images/book1.jpg" class="img-fluid"></div>
+            </div>
+            <div class="col-8">
+                <div class="p-2 text-start">
+                    <div class="row">
+                        <h2>Principles: life and work</h2>
+                    </div>
+                    <div class="row bookauthor">
+                        <h4>Ray Dalio</h4>
+                    </div>
+                    <div class="row bookpublishdate">
+                        <p>Published: 2017</p>
+                    </div>
+                    <div class="row bookavail w-25">
+                        
+                        <a href="contact.html" button class="btn btn-primary" type="submit">Book Checkout</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="container" id="footer-bootstrap-example"></div>
+
+
+    <script>
+        fetch('/header.html')                          // path relative to your site root
+            .then(response => response.text())           // parse the response as plain text/HTML
+            .then(html => {
+                document.getElementById('header-bootstrap-example').innerHTML = html;
+            })
+            .catch(err => console.error('Header failed to load:', err));
+        fetch('/footer.html')                          // path relative to your site root
+            .then(response => response.text())           // parse the response as plain text/HTML
+            .then(html => {
+                document.getElementById('footer-bootstrap-example').innerHTML = html;
+            })
+            .catch(err => console.error('Footer failed to load:', err));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Silent Library</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <meta name="theme-color" content="#712cf9" />
+  <link href="css/headers.css" rel="stylesheet" />
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container" id="header-bootstrap-example"></div>
+
+  <div class="container">
+    <h2>Events</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col text-center">
+        <div class="card h-100">
+          <img src="images/preschoolreading.jpg" class="card-img-top w-25 d-block mx-auto" alt="preschool reading image">
+
+          <div class="card-body">
+            <h5 class="card-title">Preschoolers</h5>
+            <p class="card-text">Programmes for children up to the age of 6 years</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">RSVP Now</small>
+          </div>
+        </div>
+      </div>
+      <div class="col text-center">
+        <div class="card h-100 img-background">
+          <img src="images/familyteens.jpg" class="card-img-top w-25 d-block mx-auto" alt="family and teens image">
+
+          <div class="card-body">
+            <h5 class="card-title">Parents and Teens</h5>
+            <p class="card-text">Programmes for families with teens</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">RSVP Now</small>
+          </div>
+        </div>
+      </div>
+      <div class="col text-center">
+        <div class="card h-100">
+          <img src="images/studentsresearch.jpg" class="card-img-top w-25 d-block mx-auto" alt="students researching image">
+          <div class="card-body">
+            <h5 class="card-title">Students</h5>
+            <p class="card-text">For students enrolled in universities</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">RSVP Now</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="footer-bootstrap-example"></div>
+
+
+  <script>
+    fetch('/header.html')                          // path relative to your site root
+      .then(response => response.text())           // parse the response as plain text/HTML
+      .then(html => {
+        document.getElementById('header-bootstrap-example').innerHTML = html;
+      })
+      .catch(err => console.error('Header failed to load:', err));
+    fetch('/footer.html')                          // path relative to your site root
+      .then(response => response.text())           // parse the response as plain text/HTML
+      .then(html => {
+        document.getElementById('footer-bootstrap-example').innerHTML = html;
+      })
+      .catch(err => console.error('Footer failed to load:', err));
+  </script>
+</body>
+
+</html>
