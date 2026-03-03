@@ -68,13 +68,13 @@
 
 
   <script>
-    fetch('/header.html')                          // path relative to your site root
+    fetch('header.html')                          // path relative to your site root
       .then(response => response.text())           // parse the response as plain text/HTML
       .then(html => {
         document.getElementById('header-bootstrap-example').innerHTML = html;
       })
       .catch(err => console.error('Header failed to load:', err));
-    fetch('/footer.html')                          // path relative to your site root
+    fetch('footer.html')                          // path relative to your site root
       .then(response => response.text())           // parse the response as plain text/HTML
       .then(html => {
         document.getElementById('footer-bootstrap-example').innerHTML = html;
